@@ -7,7 +7,7 @@
 int main(void)
 {
 char asc = 97;
-while (asc < 123) 
+while (asc < 123)
 {
 if (asc == 101 || asc == 113)
 {
