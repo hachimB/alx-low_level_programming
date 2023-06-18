@@ -13,5 +13,6 @@ while (asc < 123)
 putchar(asc);
 asc = asc + 1;
 }
+putchar('\n');
 return (0);
 }
