@@ -11,7 +11,6 @@ char asc = 97;
 while (asc < 123)
 {
 putchar(asc);
-putchar('\n');
 asc = asc + 1;
 }
 return (0);
