@@ -2,7 +2,9 @@
 /**
  * _islower - contains the code
  *
- * Return: nothing.
+ *@c: The character to be checked (type: int).
+ *
+ * Return: 1 if the character is lowercase, 0 otherwise
  */
 int _islower(int c)
 {
