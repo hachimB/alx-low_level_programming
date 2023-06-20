@@ -1,4 +1,9 @@
 #include "main.h"
+/**
+ * print_alphabet - contains the code
+ *
+ * Return: nothing.
+ */
 void print_alphabet(void)
 {
 char x = 97;
