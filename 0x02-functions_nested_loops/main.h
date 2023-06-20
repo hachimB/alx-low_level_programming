@@ -2,4 +2,5 @@
 #define main_h
 int _putchar(char);
 void print_alphabet(void);
+void print_them_x10(void);
 #endif
