@@ -24,5 +24,5 @@ _putchar(45);
 return (-1);
 }
 else
-return print_sign(n); 
+return (print_sign(n));
 }
