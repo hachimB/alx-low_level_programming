@@ -2,7 +2,7 @@
 /**
  * _isdigit - contains the code
  *
- * @c: integer. 
+ * @c: integer.
  *
  * Return: integer.
  */
