@@ -18,6 +18,5 @@ printf("Buzz ");
 else
 printf("%d ", x);
 }
-putchar('\n');
 return (0);
 }
