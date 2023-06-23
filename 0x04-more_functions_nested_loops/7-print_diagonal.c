@@ -14,7 +14,7 @@ if (a > 0)
 {
 for (x = 1; x <= a; x++)
 {
-for (y = 1; y <= x; y++)
+for (y = 1; y < x; y++)
 {
 _putchar (32);
 }
