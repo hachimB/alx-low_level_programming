@@ -7,12 +7,11 @@
  *
  *@b : second integer pointer.
  *
- * Return: Always 0.
+ * Return: nothing.
  */
 void swap_int(int *a, int *b)
 {
-int x = 98;
-int y = 42;
-*a = y;
+int x = *a;
+*a = *b;
 *b = x;
 }
