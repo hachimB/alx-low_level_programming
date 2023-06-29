@@ -6,7 +6,7 @@
  *
  *@src : string.
  *
- *@int : integer.
+ *@n : integer.
  *
  * Return: a string.
  */
