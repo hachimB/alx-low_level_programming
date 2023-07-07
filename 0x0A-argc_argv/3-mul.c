@@ -63,6 +63,7 @@ else
 for (i = 0; i < 5; i++)
 _putchar (x[i]);
 _putchar ('\n');
-}
 return (1);
+}
+return (0);
 }
