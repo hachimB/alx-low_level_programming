@@ -1,43 +1,6 @@
 #include <stdio.h>
-#include "main.h"
-/**
- * _atoi - contains the code
- *
- *@s : string.
- *
- * Return: an integer.
- */
-int _atoi(char *s)
-{
-int i = 0;
-int j = 0;
-int sign = 1;
-unsigned int result = 0;
-while (s[i] != '\0')
-{
-i++;
-}
-if (s[j] == '\0')
-{
-result = 0;
-}
-if (s[j] == '-' || s[j] == '+')
-{
-if (s[j] == '-')
-{
-sign = -1;
-}
-j++;
-}
-for (; j < i; j++)
-{
-if (s[j] >= '0' && s[j] <= '9')
-{
-result = (result * 10) + (s[j] - '0');
-}
-}
-return ((int)(result *sign));
-}
+#include <ctype.h>
+#include <stdlib.h>
 /**
  * main - check the code
  * @argc : count the number of arguments.
@@ -47,21 +10,21 @@ return ((int)(result *sign));
 int main(int argc, char *argv[])
 {
 int i;
+unsigned int j;
 int res = 0;
 if (argc >= 2)
 {
-for (i = 0; i < argc; i++)
+for (i = 1; i < argc; i++)
 {
-if (
-(*argv[i] >= 'a' && *argv[i] <= 'z')
-|| (*argv[i] >= 'A' && *argv[i] <= 'Z')
-)
+for (j = 0; argv[i][j] != '\0'; j++)
+{
+if (!isdigit(argv[i][j]))
 {
 printf("Error\n");
 return (1);
 }
-else
-res += _atoi (argv[i]);
+}
+res += atoi(argv[i]);
 }
 printf("%d\n", res);
 }
