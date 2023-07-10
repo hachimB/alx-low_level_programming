@@ -21,8 +21,8 @@ if (str != NULL && x != NULL)
 {
 for (i = 0; i < l; i++)
 x[i] = str[i];
-}
 x[i] = '\0';
+}
 else
 {
 return (NULL);
