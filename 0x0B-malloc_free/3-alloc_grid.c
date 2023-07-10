@@ -18,7 +18,7 @@ return (NULL);
 x = (int **) malloc(height * sizeof(int *));
 if (x == NULL)
 {
-/*free(x);*/
+free(x);
 return (NULL);
 }
 for (i = 0; i < height; i++)
