@@ -28,8 +28,8 @@ if (x[i] == NULL)
 {
 for (j = i; j >= 0; j--)
 free(x[j]);
-}
 return (NULL);
+}
 }
 for (i = 0; i < height; i++)
 {
