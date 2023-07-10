@@ -15,9 +15,9 @@ int i;
 int sum;
 char *x;
 if (s1 == NULL)
-return (NULL);
+s1 = "";
 if (s2 == NULL)
-return (NULL);
+s2 = "";
 while (s1[l1])
 l1++;
 while (s2[l2])
