@@ -28,6 +28,7 @@ if (x[i] == NULL)
 {
 for (j = i; j >= 0; j--)
 free(x[j]);
+free (x);
 return (NULL);
 }
 }
