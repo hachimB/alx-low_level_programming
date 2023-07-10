@@ -36,7 +36,7 @@ for (a = 0; a < height; a++)
 {
 for (b = 0; b < width; b++)
 {
-x[i][j] = 0;
+x[a][b] = 0;
 }
 }
 return (x);
