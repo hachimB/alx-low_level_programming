@@ -23,4 +23,5 @@ x[i] = str[i];
 else
 return (NULL);
 return (x);
+free(x);
 }
