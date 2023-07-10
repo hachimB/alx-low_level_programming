@@ -14,7 +14,7 @@ int l = 0;
 char *x;
 while (str[l] != '\0')
 l++;
-x = (char *) malloc(l *sizeof(char));
+x = (char *) malloc((l + 1) * sizeof(char));
 if (x != NULL && str != NULL)
 {
 for (i = 0; i < l; i++)
@@ -22,7 +22,6 @@ x[i] = str[i];
 }
 else
 {
-free(x);
 return (NULL);
 }
 return (x);
