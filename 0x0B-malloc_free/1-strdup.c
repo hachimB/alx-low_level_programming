@@ -17,7 +17,7 @@ l++;
 x = (char *) malloc(l *sizeof(char));
 if (x != NULL && str != NULL)
 {
-for (i = 0; i < l; i++)
+for (i = 0; i <= l; i++)
 x[i] = str[i];
 }
 else
