@@ -21,7 +21,9 @@ for (i = 0; i <= l; i++)
 x[i] = str[i];
 }
 else
-return (NULL);
-return (x);
+{
 free(x);
+return (NULL);
+}
+return (x);
 }
