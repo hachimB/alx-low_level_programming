@@ -20,4 +20,5 @@ x[i] = c;
 else
 return (NULL);
 return (x);
+free (x);
 }
