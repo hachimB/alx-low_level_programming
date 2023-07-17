@@ -9,8 +9,8 @@
  * Return: nothing.
  */
 dog_t *new_dog(char *name, float age, char *owner)
-{	struct dog *nd;
-	nd = malloc(sizeof(struct dog));
+{	dog_t *nd;
+	nd = malloc(sizeof(dog_t));
 	if (nd == NULL)
 	{
 		return (NULL);
