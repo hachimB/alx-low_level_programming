@@ -30,7 +30,7 @@ printf("%s%f", separator, va_arg(list, double));
 break;
 case 's':
 s = va_arg(list, char *);
-if (!s)
+if (s == NULL)
 s = "(nil)";
 printf("%s%s", separator, s);
 break;
