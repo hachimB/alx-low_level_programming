@@ -13,6 +13,8 @@ int j = 0;
 char *separator = "";
 char *s;
 va_start(list, format);
+if (format)
+{
 while (format[j] != '\0')
 {
 switch (format[j])
@@ -41,4 +43,5 @@ j++;
 }
 printf("\n");
 va_end(list);
+}
 }
