@@ -41,6 +41,7 @@ continue;
 separator = ", ";
 j++;
 }
+printf("\n");
 va_end(list);
 }
 }
