@@ -18,33 +18,23 @@ while (format[j] != '\0')
 switch (format[j])
 {
 case 'i':
-{
 printf("%s%d", separator, va_arg(list, int));
 break;
-}
 case 'c':
-{
 printf("%s%c", separator, va_arg(list, int));
 break;
-}
 case 'f':
-{
 printf("%s%f", separator, va_arg(list, double));
 break;
-}
 case 's':
-{
 s = va_arg(list, char *);
 if (!s)
 s = "(nil)";
 printf("%s%s", separator, s);
 break;
-}
 default:
-{
 j++;
 continue;
-}
 }
 separator = ", ";
 j++;
