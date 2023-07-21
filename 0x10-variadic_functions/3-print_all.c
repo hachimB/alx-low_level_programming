@@ -15,7 +15,7 @@ char *s;
 va_start(list, format);
 if (format)
 {
-while (format[j] != '\0')
+while (format[j])
 {
 switch (format[j])
 {
