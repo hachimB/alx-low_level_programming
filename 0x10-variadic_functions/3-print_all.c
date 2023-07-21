@@ -41,5 +41,6 @@ continue;
 separator = ", ";
 j++;
 }
+va_end(list);
 }
 }
