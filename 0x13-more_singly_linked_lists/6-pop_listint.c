@@ -18,5 +18,6 @@ ptr = *head;
 *head = (*head)->next;
 n = ptr->n;
 free(ptr);
+ptr = NULL;
 return (n);
 }
