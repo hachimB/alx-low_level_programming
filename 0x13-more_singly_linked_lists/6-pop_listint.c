@@ -15,6 +15,8 @@ int n;
 if (head == NULL)
 return (0);
 ptr = *head;
+if (ptr == NULL)
+return (0);
 *head = (*head)->next;
 n = ptr->n;
 free(ptr);
