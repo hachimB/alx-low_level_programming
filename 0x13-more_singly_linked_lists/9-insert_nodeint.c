@@ -28,7 +28,7 @@ return (t);
 }
 ptr = *head;
 idx--;
-while (idx != 0 && ptr != NULL)
+while (idx != 0)
 {
 ptr = ptr->next;
 idx--;
