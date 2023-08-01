@@ -30,8 +30,6 @@ previous = current;
 current = current->next;
 index--;
 }
-if (index > 0)
-return (-1);
 previous->next = current->next;
 free(current);
 current = NULL;
