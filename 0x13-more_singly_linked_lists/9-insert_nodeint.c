@@ -33,7 +33,7 @@ while (idx != 0 && ptr != NULL)
 ptr = ptr->next;
 idx--;
 }
-if (idx > 0 || ptr == NULL)
+if (idx > 0)
 return (NULL);
 t->next = ptr->next;
 ptr->next = t;
