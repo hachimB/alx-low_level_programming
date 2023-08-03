@@ -20,13 +20,9 @@ for (j = 0; j < i; j++)
 if (b[j] != '0' && b[j] != '1')
 return (0);
 else if (b[j] == '0')
-{
-n = n * 2;
-}
+n *= 2;
 else if (b[j] == '1')
-{
 n = n * 2 + 1;
-}
 }
 return (n);
 }
