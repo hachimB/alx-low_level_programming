@@ -13,7 +13,7 @@ int i = 0;
 int j;
 while (b[i] != '\0')
 i++;
-if (b == NULL)
+if (b[i] == NULL)
 return (0);
 for (j = 0; j < i; j++)
 {
