@@ -18,10 +18,17 @@ temp->prev = NULL;
 temp->n = n;
 temp->next = NULL;
 if (*h == NULL)
+{
+free(temp);
 return (NULL);
+}
 ptr = *h;
 if (idx == 0)
+{
 ptr = add_dnodeint(h, n);
+free(temp);
+return (ptr);
+}
 while (idx > 1)
 {
 ptr = ptr->next;
@@ -29,13 +36,15 @@ idx--;
 }
 if (ptr->next == NULL)
 ptr = add_dnodeint_end(h, n);
-else
+if (ptr == NULL)
 {
+free(temp);
+return (NULL);
+}
 ptr2 = ptr->next;
 ptr->next = temp;
 ptr2->prev = temp;
 temp->next = ptr2;
 temp->prev = ptr;
-}
 return (ptr);
 }
