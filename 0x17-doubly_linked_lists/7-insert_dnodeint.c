@@ -63,7 +63,7 @@ ptr = add_dnodeint(h, n);
 free(temp);
 return (ptr);
 }
-while (idx > 0)
+while (idx > 1)
 {
 ptr = ptr->next;
 idx--;
@@ -73,7 +73,10 @@ if (ptr->next == NULL)
 ptr = add_dnodeint_end(h, n);
 return (ptr);
 }
+else
+{
 ptr2 = ptr->next;
 insert_between(ptr, ptr2, temp);
+}
 return (ptr);
 }
