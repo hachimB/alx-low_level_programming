@@ -63,9 +63,7 @@ ptr = ptr->next;
 index--;
 }
 if (ptr->next == NULL)
-{
 ptr = delete_atend(head);
-}
 else
 {
 ptr2 = ptr->prev;
