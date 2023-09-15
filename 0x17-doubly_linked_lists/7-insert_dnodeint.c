@@ -73,10 +73,7 @@ if (ptr->next == NULL)
 ptr = add_dnodeint_end(h, n);
 return (ptr);
 }
-else
-{
 ptr2 = ptr->next;
 insert_between(ptr, ptr2, temp);
-}
 return (ptr);
 }
