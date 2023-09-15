@@ -24,7 +24,7 @@ free(temp);
 return (NULL);
 }
 ptr = *h;
-while(ptr != NULL)
+while (ptr != NULL)
 {
 count++;
 ptr = ptr->next;
@@ -35,6 +35,7 @@ ptr = *h;
 if (idx == 0)
 {
 ptr = add_dnodeint(h, n);
+free(temp);
 return (ptr);
 }
 while (idx > 1)
