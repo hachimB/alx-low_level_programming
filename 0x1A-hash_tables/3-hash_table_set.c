@@ -29,7 +29,7 @@ else
 {
 ptr = ht->array[index];
 new->next = ptr;
-ptr = new;
+ht->array[index] = new;
 }
 return (1);
 }
