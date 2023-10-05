@@ -13,9 +13,7 @@ hash_node_t *ptr = NULL;
 char *key_cp;
 char *val_cp;
 hash_node_t *new = malloc(sizeof(hash_node_t));
-if (new == NULL)
-return (0);
-if (key == NULL)
+if (new == NULL || key == NULL || ht == NULL)
 return (0);
 index = key_index((const unsigned char *)key, ht->size);
 key_cp = strdup(key);
