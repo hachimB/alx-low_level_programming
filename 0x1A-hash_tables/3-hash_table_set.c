@@ -9,7 +9,7 @@
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 unsigned long int index;
-hash_node_t *ptr;
+hash_node_t *ptr = NULL;
 char *key_cp;
 char *val_cp;
 hash_node_t *new = malloc(sizeof(hash_node_t));
@@ -24,12 +24,16 @@ new->key = key_cp;
 new->value = val_cp;
 new->next = NULL;
 if (ht->array[index] == NULL)
+{
 ht->array[index] = new;
+}
 else
 {
 ptr = ht->array[index];
 new->next = ptr;
 ht->array[index] = new;
 }
+free(key_cp);
+free(val_cp);
 return (1);
 }
