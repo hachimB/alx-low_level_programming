@@ -24,8 +24,8 @@ ht->array[index] = new;
 else
 {
 ptr = ht->array[index];
-new->next = ptr->next;
-ptr->next = new;
+new->next = ptr;
+ptr = new;
 }
 return (1);
 }
