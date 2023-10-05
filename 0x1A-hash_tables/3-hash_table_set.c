@@ -33,7 +33,5 @@ ptr = ht->array[index];
 new->next = ptr;
 ht->array[index] = new;
 }
-free(key_cp);
-free(val_cp);
 return (1);
 }
