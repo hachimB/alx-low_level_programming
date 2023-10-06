@@ -27,6 +27,15 @@ ht->array[index] = new;
 }
 else
 {
+if (strcmp(key, ht->array[index]->key) == 0)
+{
+free(ht->array[index]->value);
+if (new->value)
+free(new->value);
+free(new);
+ht->array[index]->value = strdup(value);
+return (1);
+}
 ptr = ht->array[index];
 new->next = ptr;
 ht->array[index] = new;
