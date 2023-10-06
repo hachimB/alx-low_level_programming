@@ -19,7 +19,7 @@ while (ptr)
 {
 if (comma)
 printf(", ");
-printf("%s: %s", ptr->key, ptr->value);
+printf("'%s': '%s'", ptr->key, ptr->value);
 comma = 1;
 ptr = ptr->next;
 }
