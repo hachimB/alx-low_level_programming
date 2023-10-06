@@ -15,10 +15,10 @@ index = key_index((const unsigned char *)key, ht->size);
 ptr = ht->array[index];
 while (ptr)
 {
-if (ht->array[index] == NULL || strcmp(ht->array[index]->key, key) != 0)
+if (strcmp(ptr->key, key) != 0)
 return (NULL);
-if (strcmp(ht->array[index]->key, key) == 0)
-return (ht->array[index]->value);
+if (strcmp(ptr->key, key) == 0)
+return (ptr->value);
 ptr = ptr->next;
 }
 return (NULL);
