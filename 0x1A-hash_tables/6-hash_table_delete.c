@@ -18,8 +18,9 @@ while (ptr)
 {
 temp = ptr;
 ptr = ptr->next;
+free(temp->key);
+free(temp->value);
 free(temp);
-temp = NULL;
 }
 }
 free(ht->array);
