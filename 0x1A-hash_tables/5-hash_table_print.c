@@ -20,8 +20,8 @@ while (ptr)
 if (comma)
 printf(", ");
 printf("%s: %s", ptr->key, ptr->value);
-ptr = ptr->next;
 comma = 1;
+ptr = ptr->next;
 }
 }
 printf("}\n");
