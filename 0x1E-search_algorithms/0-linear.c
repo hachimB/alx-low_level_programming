@@ -1,5 +1,4 @@
 #include "search_algos.h"
-
 /**
  * linear_search  - the Linear search algorithm
  * @array:is a pointer to the first element of the array
@@ -29,4 +28,3 @@ index = -1;
 }
 return (index);
 }
-
