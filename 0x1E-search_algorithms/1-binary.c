@@ -13,6 +13,8 @@ size_t start = 0;
 size_t end = size - 1;
 size_t middle;
 size_t i;
+if (array)
+{
 while (start <= end)
 {
 printf("Searching in array: ");
@@ -33,6 +35,7 @@ else if (value < array[middle])
 end = middle - 1;
 else
 start = middle + 1;
+}
 }
 return (-1);
 }
