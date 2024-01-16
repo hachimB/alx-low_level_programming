@@ -17,7 +17,12 @@ while (start <= end)
 {
 printf("Searching in array: ");
 for (i = start; i <= end; i++)
-printf("%d ", array[i]);
+{
+if (i < end)
+printf("%d, ", array[i]);
+else
+printf("%d", array[i]);
+}
 printf("\n");
 middle = (start + end) / 2;
 if (value == array[middle])
